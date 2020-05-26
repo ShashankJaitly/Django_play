@@ -4,7 +4,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, To
 
 data = [
-# THIS IS SSAMPLE DATA
+# THIS IS SAMPLE DATA
 #     {
 #     "email": "shashank.1822co1053@kiet.edu",
 #     "name": "Shashank Jaitly"
@@ -32,7 +32,7 @@ for recipent in range(0,len(recipent_list)):
    
 
 message = Mail(
-    from_email=('shashank16jaitly@gmail.com', 'Shashank'),
+    from_email=('from@gmail.com', 'sender\'s name'),
     to_emails=to_emails,
     subject='Hi -name-, this is a test mail',
     html_content=""" PUT YOUR MAILING TEMPLATE HERE """,
