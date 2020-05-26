@@ -3,16 +3,17 @@ import json
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, To
 
-# data = [
+data = [
+# THIS IS SSAMPLE DATA
 #     {
-#     "email": "shashank16jaitly@gmail.com",
+#     "email": "shashank.1822co1053@kiet.edu",
 #     "name": "Shashank Jaitly"
 #   },
-#   {                                                   Sample data
+#   {                                                   
 #     "email": "shashank16vasu@gmail.com",
 #     "name": "Shashank"
 #   },
-# ]
+]
 recipent_list=[]
 user_list = []
 for user in data:
@@ -31,10 +32,10 @@ for recipent in range(0,len(recipent_list)):
    
 
 message = Mail(
-    from_email=('shashank.1822co1053@kiet.edu', 'Shashank'),
+    from_email=('shashank16jaitly@gmail.com', 'Shashank'),
     to_emails=to_emails,
     subject='Hi -name-, this is a test mail',
-    html_content="""\ place your html here """,
+    html_content=""" PUT YOUR MAILING TEMPLATE HERE """,
     
     is_multiple=True)
 try:
